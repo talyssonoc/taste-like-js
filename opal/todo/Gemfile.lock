@@ -1,0 +1,37 @@
+GIT
+  remote: git://github.com/opal/opal-jquery.git
+  revision: 1814202085f168176231b877b2b7a967b75b0726
+  specs:
+    opal-jquery (0.1.2)
+      opal (>= 0.5.0, < 1.0.0)
+
+GIT
+  remote: git://github.com/opal/opal.git
+  revision: 85220f32136c74ac93f1cb721462324a3423cf44
+  specs:
+    opal (0.6.0)
+      source_map
+      sprockets
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hike (1.2.3)
+    json (1.8.1)
+    multi_json (1.8.4)
+    rack (1.5.2)
+    source_map (3.0.1)
+      json
+    sprockets (2.10.1)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    tilt (1.4.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  opal!
+  opal-jquery!

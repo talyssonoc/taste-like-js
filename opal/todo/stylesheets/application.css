@@ -1,0 +1,12 @@
+[data-new-title] {
+  display: none;
+}
+
+.item.complete {
+  text-decoration: line-through;
+}
+
+.remove {
+  color: red;
+  margin-left: 5px;
+}
