@@ -6,23 +6,20 @@ class TodoView
   end
 
   def create_checkbox(complete = false)
-    self.checkbox = Element.new(:input)
-
+    checkbox = Element.new(:input)
     checkbox.attr 'type', 'checkbox'
     checkbox.attr 'checked', complete
     checkbox.attr 'data-checkbox', true
   end
 
   def create_label(title)
-    self.label = Element.new(:label)
-
+    label = Element.new(:label)
     label.text = title
     label.attr 'data-label', true
   end
 
   def create_remove
-    self.remove = Element.new(:span)
-
+    remove = Element.new(:span)
     remove.text = 'x'
     remove.add_class 'remove' 
     remove.attr 'data-remove', true
@@ -39,9 +36,9 @@ class TodoView
     
     el.add_class 'item'
 
-    create_checkbox(todo.complete)
-    create_label(todo.title)
-    create_remove
+    self.checkbox = create_checkbox(todo.complete)
+    self.label = create_label(todo.title)
+    self.remove = create_remove
 
     checkbox.on :change do
 
